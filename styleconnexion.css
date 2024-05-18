@@ -1,0 +1,326 @@
+
+
+.buttonn-cnx {
+    background-color:#79d5dd;;
+}
+.buttons-j{
+    background-color: #DFEF57;}
+
+.buttons,
+.buttonn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border-radius: 40px;
+    padding: 15px 20px; /* Augmentez la hauteur du bouton */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Ajoutez la transition pour l'effet d'ombre */
+    width: 200px;
+    margin: 11px auto 20px auto; /* Centrez les boutons en utilisant la marge automatique */
+    font-family: nunito,sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Ajoutez l'effet d'ombre */
+    
+}
+.buttonn:hover {
+    background: #8baab5;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); /* Agrandir l'effet d'ombre au survol */
+}
+.buttons:hover{
+    background: #d4e157;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3); /* Agrandir l'effet d'ombre au survol */
+}
+
+/* CSS pour diviser chaque rangée en deux parties */
+.form-row-split {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CSS pour les colonnes des champs */
+.form-col {
+    width: calc(50% - 20px); /* Ajustez la largeur selon vos besoins */
+}
+
+/* CSS pour les champs d'entrée */
+.input-text {
+    width: 100%;
+}
+
+/* Ajoutez d'autres styles CSS au besoin */
+
+body {
+    margin: 0;
+    font-weight: lighter;
+}
+
+.page-content {
+    width: 100%;
+    margin: 0 auto;
+    background-image: -moz-linear-gradient( 136deg,hsl(196, 95%, 85%) 0%,rgb(210, 254, 255) 100%);
+    background-image: -webkit-linear-gradient( 136deg,rgb(26, 151, 158) 0%,rgba(46, 182, 220, 0.779) 100%);
+    background-image: -ms-linear-gradient( 136deg,rgb(191, 246, 255) 0%,rgb(31, 190, 182) 100%); 
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -o-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -o-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    -webkit-align-items: center
+}
+
+.form-v6-content {
+    background: #fff;
+    width: 968px;
+    border-radius: 8px;
+    -o-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    margin: 180px 0;
+    font-family: nunito,sans-serif;
+    color: #000;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    display: -webkit-flex
+}
+
+.form-v6-content .form-left {
+    margin-bottom: -6px
+}
+
+.form-v6-content .form-left img {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px
+}
+
+.form-v6-content .form-detail {
+    padding: 0px 40px;
+    position: relative;
+    width: 100%
+}
+
+.form-v6-content .form-detail h2 {
+    color: #333;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    padding: 6px 0 0;
+    margin-bottom: 47px
+}
+/* Add custom CSS styles */
+.form-control.custom-select option:hover {
+    background-color: #B1D5E2; /* Modification de la couleur de fond lorsqu'une option est survolée */
+    color: black; /* Modification de la couleur du texte */
+}
+.form-control.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    padding: 0 15px 10px;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #e5e5e5;
+    margin-bottom: 30px;
+    appearance: unset;
+    -moz-appearance: unset;
+    -webkit-appearance: unset;
+    -o-appearance: unset;
+    -ms-appearance: unset;
+    outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    font-family: nunito,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-weight: lighter;
+    color: #333
+}
+
+.form-control.custom-select:focus {
+    outline: none;
+    border-color: #fff;
+}
+.form-v6-content .form-row {
+    width: 100%
+}
+
+.form-v6-content .form-detail .form-row-last {
+    text-align: center
+}
+
+.form-v6-content .form-detail .input-text {
+    margin-bottom: 30px
+}
+
+.form-v6-content .form-detail input {
+    width: 92%;
+    padding: 0 10px 10px;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #e5e5e5;
+    appearance: unset;
+    -moz-appearance: unset;
+    -webkit-appearance: unset;
+    -o-appearance: unset;
+    -ms-appearance: unset;
+    outline: none;
+    -moz-outline: none;
+    -webkit-outline: none;
+    -o-outline: none;
+    -ms-outline: none;
+    font-family: nunito,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-weight: lighter;
+    color: #333
+}
+
+.form-v6-content .form-detail .form-row input:focus {
+    border-bottom: 2px solid #DFEF57
+}
+
+.form-v6-content .form-detail .register {
+    justify-content: center;
+    background-color: #DFEF57;
+    color: black;
+    border-radius: 40px;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 120px;
+    margin: 11px 0 20px 0;
+    cursor: pointer;
+    font-family: nunito,sans-serif;
+    color: #000000;
+    font-weight:lighter
+    font-size: 16px
+}
+
+.form-v6-content .form-detail .register:hover {
+    background: #d4e157
+}
+
+.form-v6-content .form-detail .form-row-last input {
+    padding: 13px
+}
+
+input::-webkit-input-placeholder {
+    color: #666;
+    font-size: 16px
+}
+
+input::-moz-placeholder {
+    color: #666;
+    font-size: 16px
+}
+
+input:-ms-input-placeholder {
+    color: #666;
+    font-size: 16px
+}
+
+input:-moz-placeholder {
+    color: #666;
+    font-size: 16px
+}
+
+@media screen and (max-width: 991px) {
+    .form-v6-content {
+        margin:180px 20px;
+        flex-direction: column;
+        -o-flex-direction: column;
+        -ms-flex-direction: column;
+        -moz-flex-direction: column;
+        -webkit-flex-direction: column
+    }
+
+    .form-v6-content .form-left {
+        width: 100%
+    }
+
+    .form-v6-content .form-left img {
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 8px
+    }
+
+    .form-v6-content .form-detail {
+        padding: 30px 20px;
+        width: auto
+    }
+
+    .form-v6-content .form-detail .form-row input {
+        width: 96%
+    }
+
+    .form-v6-content .form-detail .register {
+        margin-bottom: 80px
+    }
+}
+.form-row a{
+    text-decoration: none;
+}
+.sous-titre {
+    text-align: center;
+    font-size: 16;
+    color: #333;
+  font-weight: lighter;
+  }
+  .titre {
+    font-family: century Gothic;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    padding: 6px 0 0;
+    margin-bottom: 30px;
+    color: #333;
+}
+/* Add custom CSS styles for the select element */
+.custom-select {
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+.custom-select:focus {
+    border-color: black;
+}
+
+/* CSS pour styliser les champs de formulaire */
+input.form-control {
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+  }
+  
+  input.form-control:focus {
+    border-color: black;
+  }
+  
+@media screen and (max-width: 767px) {
+    .form-v6-content .form-detail .form-row input {
+        width:94%
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .form-v6-content .form-detail .form-row input {
+        width:89%
+    }
+}

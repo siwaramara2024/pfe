@@ -1,0 +1,198 @@
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.collapse-custom-nav{
+    overflow:hidden
+
+}
+
+.navbar-toggler-custom{ display:none}
+.nav-custom > li{ float:left }
+.nav-custom > li >a{
+    color: #f2f2f2;
+text-align: center;
+padding: 14px 20px; /* Assurez-vous que le padding top et bottom est égal */
+text-decoration: none;
+font-size: 17px;
+display:inline-block;
+}
+.topnav {
+    position: relative;
+background-color: #568894;
+border-radius: 100px;
+/* padding-top: 1rem !important; */
+/* padding-bottom: 1rem !important; */
+text-align:center;
+max-width: 1170px;
+margin: 15px auto; 
+}
+
+.topnav a.navbar-brand {
+
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 20px; /* Assurez-vous que le padding top et bottom est égal */
+text-decoration: none;
+font-size: 17px;
+}
+
+.topnav a:hover {
+color: #fff;
+}
+.topnav a.active {
+background-color: #04AA6D;
+color: white;
+}
+
+.topnav .icon {
+display: none;
+}
+
+ 
+.topnav .action-button {
+    border-radius: 30px;
+    border: 2px solid white;
+    padding: 8px 30px; /* Assurez-vous que le padding top et bottom est égal */
+    float: right;
+    color: white;
+    margin:5px 20px 5px 0px;
+    background: transparent;
+    transition: background-color 0.25s;
+    outline: none;
+    }
+    /* header.conainer-nav{
+    position: relative;
+    padding:0 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    } */
+    /* @media (min-width: 1200px) {
+    .container-nav {
+    max-width: 1170px;
+    }  */
+    
+    .navbar-brand{
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    margin-left: 2rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-style: none;
+    }
+    nav.topnav container navbar-container navbar navbar-dark navbar-expand-sm{
+    margin:15px 151.4px 0px;
+    }
+
+    .navbar-toggler-custom-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        content: "";
+        background: no-repeat center center;
+        background-size: 100% 100%;
+    }
+    .navbar-toggler-custom {
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: .25rem; 
+        float: right;
+        margin-right: 20px;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .navbar-dark .navbar-toggler-custom-icon {
+        background-image: url(../img/menu_hamburger.png);
+    }
+    .container {
+        width: calc(100% - 24px);
+    }
+    
+    @media screen and (min-width: 992px) {
+.collapse-custom{
+    display: block !important;
+}
+
+    }
+@media screen and (max-width: 991.98px) {
+    .topnav{
+        border-radius: 20px;
+    }
+    .nav-custom > li >a{
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid #487079;
+    }
+    .collapse-custom{
+        position: relative;
+        display: none;
+        overflow: visible;
+        clear: both;
+    }
+.navbar-toggler-custom{
+    display: block;
+}
+.nav-custom{
+    clear: both;
+    position: relative;
+    margin-top: 20px;
+    
+     
+    z-index: 7;
+
+}
+.nav-custom > li {
+    float: none;
+    display: block;
+    
+}
+.navbar-brand{
+    margin-left: 0;
+}
+}
+@media screen and (max-width: 600px) {
+.topnav a:not(:first-child) {
+    display: none;
+}
+.topnav{
+    text-align:center;
+}
+.topnav a.icon {
+    float: right;
+    display: block;
+}
+.topnav.responsive {
+    position: relative;
+}
+.topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav.responsive a {
+    float: none;
+    display: inline-block;
+    text-align: left;
+}
+}

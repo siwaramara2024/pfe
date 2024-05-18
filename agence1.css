@@ -1,0 +1,745 @@
+.news {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	color: #10182f
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1040px;
+	flex-wrap: wrap
+}
+.html { overflow-y: hidden; }
+.card {
+	margin: 30px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.123);
+	overflow: hidden;
+	width: 350px;
+	cursor: pointer;
+	
+	
+}
+
+
+
+.card:hover h4 {
+	text-decoration: underline;
+}
+
+.bi{
+	margin-right: 10px;
+	color: black;
+	
+}
+.user-and-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.user-info h5 {
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-size: 18px;
+}
+.user {
+    display: flex;
+    align-items: center;
+}
+.card-body {
+    position: relative; /* Pour permettre le positionnement absolu du tag */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+      min-height: 40px;
+  
+}
+
+.tag {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Place le tag à 10px de la droite */
+}
+
+
+.info-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.info-table td {
+    padding: 10px;
+    border: 0; /* Supprime les bordures par défaut */
+}
+
+.info-table td:nth-child(odd) {
+    width: 50%;
+}
+
+.info-table td:nth-child(even) {
+    height: 50px;
+}
+
+.info-table td:nth-child(3),
+.info-table td:nth-child(4) {
+    height: auto;
+}
+
+.info-table td:not(:last-child) {
+    border-right: 1px solid #ddd; /* Ajoute la bordure à droite de chaque cellule sauf la dernière */
+}
+
+.info-table tr:not(:last-child) td {
+    border-bottom: 1px solid #ddd; /* Ajoute la bordure en bas de chaque cellule sauf la dernière ligne */
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 40px;
+}
+
+.user {
+    display: flex;
+    margin-top: auto;
+}
+
+.user img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+.user-info h5 {
+    margin: 0;
+    font-family: Product Sans Medium Regular;
+    font-size: 18px;
+}
+
+.user-info small {
+    color: #545d7a;
+    font-size: 13.5px;
+}
+
+.card-body h4 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-family: Product Sans Bold;
+}
+
+.card-header img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 20px;
+	min-height: 40px
+}
+
+.tag {
+	background: #ccc;
+	border-radius: 50px;
+	font-size: 13px;
+	margin: 0;
+	color: #fff;
+	padding: 6px 10px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family:Arial, Helvetica, sans-serif;
+	letter-spacing: .7px
+}
+
+.tag-teal {
+	background-color: #47bcd4
+}
+
+.tag-purple {
+	background-color: #DFEF57
+
+}
+
+.tag-pink {
+	background-color: #47bcd4
+}
+
+.card-body p {
+	font-size: 15px;
+	margin: 0 0 40px;
+	color: #545d7a
+}
+
+.user {
+	display: flex;
+	margin-top: auto
+}
+
+.user img {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px
+}
+
+.user-info h5 {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif
+	font-size: 18px
+}
+
+.user-info small {
+	color: #545d7a;
+	font-size: 13.5px;
+}
+
+.card-body h4 {
+	font-size: 22px;
+	margin-top: 10px;
+	margin-bottom: 7px;
+	font-family: Arial, Helvetica, sans-serif
+}
+
+
+
+
+/* filtr */
+/* Styles généraux */
+* {
+    box-sizing: border-box;
+}
+
+/* Styles des éléments de filtrage */
+.filter-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#price-range{
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-right: 30px;
+	margin-top: 30px;
+    font-size: 17px;
+	color: black;
+    transition: border-color 0.3s; /* Transition pour la couleur de la bordure */
+}
+#price-value{
+	padding: 10px;
+	margin-top: 20px;
+    font-size: 17px;
+	color: black;
+   
+}
+.filter-container select,
+#select-date {
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-right: 10px;
+	margin-top: 20px;
+    font-size: 17px;
+	color: black;
+    transition: border-color 0.3s; /* Transition pour la couleur de la bordure */
+}
+
+.filter-container select:focus,
+#select-date:focus,
+#price-range:focus {
+    outline: none; /* Supprimer la bordure de focus */
+}
+
+.filter-container select option:checked {
+    background-color: #4c9daf; /* Couleur de fond lorsque l'option est sélectionnée */
+    color: white; /* Couleur du texte lorsque l'option est sélectionnée */
+}
+
+
+
+/* Styles pour les curseurs remplis */
+#price-range:valid::-webkit-slider-thumb {
+    background-color: #4c9daf; /* Couleur du curseur lorsque le curseur est rempli */
+}
+
+/* Styles pour le champ de date sans cadre lorsqu'il est rempli */
+#select-date:focus {
+    outline: none;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Styles pour les éléments remplis */
+.filter.filled,
+#price-range.filled,
+#select-date.filled {
+    border-color: #4c9daf; /* Couleur de la bordure lorsque rempli */
+}
+
+#price-range.filled {
+    border-color: #4c9daf;
+}
+
+#select-date.filled {
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-left: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    border-color: #4c9daf;
+}
+
+#select-price.filled {
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-left: 30px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    border-color: #4c9daf;
+}
+
+/* Styles pour la barre de prix */
+.price-container {
+    display: flex;
+    align-items: center; /* Alignement vertical au centre */
+}
+
+/* Conteneur pour la barre de prix et la valeur */
+.price-inputs {
+    display: flex;
+    align-items: center; /* Alignement vertical au centre */
+}
+
+#price-range {
+    width: 180px;
+	
+    margin-left: 30px; /* Marge entre la barre de prix et la valeur */
+    appearance: none; /* Suppression du style par défaut du navigateur */
+    background-color: #DFEF57; /* Couleur de la barre de prix */
+    border: none; /* Suppression de la bordure */
+    border-radius: 50px; /* Bord arrondi pour la barre de prix */
+	height: 0px;/* Hauteur de la barre de prix *
+    outline: none; /* Suppression de l'effet de focus */
+}
+
+/* Styles pour le point de la barre de prix */
+#price-range::-webkit-slider-thumb {
+    width: 15px; /* Largeur du point */
+    height: 15px; /* Hauteur du point */
+    background-color: #fff; /* Couleur du point */
+    border: none; /* Suppression de la bordure */
+    border-radius: 100%; /* Bord droit pour le point */
+    cursor: pointer; /* Curseur pointer pour indiquer l'interaction */
+    -webkit-appearance: none; /* Suppression du style par défaut du navigateur */
+    appearance: none; /* Suppression du style par défaut du navigateur */
+}
+
+/* Styles pour la valeur de prix */
+#price-value {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Styles pour les sélecteurs */
+#price-range {
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-left: 30px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Transition pour la couleur de la bordure */
+}
+.filter-container select,
+#select-date{
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Transition pour la couleur de la bordure */
+}
+
+/* Styles au survol */
+.filter-container select:hover,
+#select-date:hover,
+#price-range:hover {
+    border-color: #4c9daf; /* Couleur de la bordure au survol */
+}
+
+/* Styles pour le focus */
+.filter-container select:focus,
+#select-date:focus {
+    outline: none; /* Supprimer la bordure de focus */
+    border-color: #4c9daf; /* Couleur de la bordure au focus */
+}
+
+/* Styles pour les options sélectionnées */
+.filter-container select option:checked {
+    background-color: #4c9daf; /* Couleur de fond lorsque l'option est sélectionnée */
+    color: white; /* Couleur du texte lorsque l'option est sélectionnée */
+}
+
+
+--------------------------------------------------------------*/
+body {
+  color: #444444;
+}
+
+a {
+  color: #DFEF57;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #DFEF57;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+.features {
+    padding-top: 20px;
+  }
+  
+  .features .icon-box {
+    padding-left: 15px;
+  
+  }
+  
+  .features .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px 0 10px 60px;
+  }
+  
+  .features .icon-box i {
+    font-size: 20px;
+    float: left;
+    color: #DFEF57;
+  }
+  
+  
+  .features .icon-box p {
+    font-size: 15px;
+    color: #848484;
+    margin-left: 60px;
+  }
+  
+  .features .image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px;
+    width: 350px;
+    height: 300px;
+      border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.123);
+  }
+  .section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #DFEF57;
+    margin-left: 30px ;
+}
+  .section-title h2 {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Century Gothic;
+    text-transform: lowercase;
+    padding: 0;
+    color: #DFEF57;
+   
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    font-family: "Poppins", sans-serif;
+}
+.section-title P {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Century Gothic;
+  text-transform: lowercase;
+  padding: 40;
+  color:black;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+}
+.section-title  {
+  font-weight: 500;
+  font-family: Century Gothic;
+  text-transform: lowercase;
+  padding: 0;
+  color: #DFEF57;
+  margin-left: 100px ;
+  margin-bottom: 50px ;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.biographie{
+  font-size: 18px;
+  text-align: justify;
+
+}
+
+@media screen and (max-width: 767px) {
+  .biographie {
+    display: inline-block;
+    font-size: 16px;
+    text-align: justify;
+   
+   
+  }
+  .les-bis{
+    display: inline-block;
+  }
+}
+  .nomA{
+    font-size: 40px;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .info-tablee td {
+    padding: 10px;
+    border:0px ;
+  }
+  
+  .info-tablee i {
+    font-size: 20px;
+    color: #DFEF57;
+    margin-right: 10px;
+  }
+  .info-tablee {
+    width: calc(100% -40%); /* Largeur de la table moins la largeur de la photo */
+    float: right; /* Alignement à droite */
+    margin-left: 20px; /* Espacement à gauche de la photo */
+    outline: none;
+  }
+
+  .portfolio .portfolio-item {
+    margin-bottom: 30px;
+  }
+  
+  .portfolio #portfolio-flters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;  border: none; /* Pas de bordure */
+    border-radius: 20px; /* Rayon de courbure des coins */
+    cursor: pointer;
+   
+  }
+  
+  .portfolio #portfolio-flters li:hover {
+    color: #151515;
+    border-bottom: 1px solid rgb(123, 122, 122);
+   
+
+  
+  }
+  .portfolio #portfolio-flters li.filter-active {
+    color: #151515;
+    background: #DFEF57;
+  
+  }
+  
+  .portfolio #portfolio-flters li:last-child {
+    margin-right: 0;
+  }
+  
+  .portfolio .portfolio-wrap {
+    transition: 0.3s;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(21, 21, 21, 0.6);
+  }
+  
+  .portfolio .portfolio-wrap::before {
+    content: "";
+    background: rgba(21, 21, 21, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+  }
+  
+  .portfolio .portfolio-wrap img {
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links {
+    text-align: center;
+    z-index: 4;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links a {
+    color: #fff;
+    margin: 0 5px 0 0;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links a:hover {
+    color: #DFEF57;
+  }
+  
+  .portfolio .portfolio-wrap:hover::before {
+    opacity: 1;
+  }
+  
+  .portfolio .portfolio-wrap:hover img {
+    transform: scale(1.2);
+  }
+  
+  .portfolio .portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+  }
+  
+  /*--------------------------------------------------------------
+  # Portfolio Details
+  --------------------------------------------------------------*/
+  .portfolio-details {
+    padding-top: 40px;
+  }
+  
+  .portfolio-details .portfolio-details-slider img {
+    width: 100%;
+  }
+  
+  .portfolio-details .portfolio-details-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    opacity: 1;
+    border: 1px solid #DFEF57;
+  }
+  
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #DFEF57;
+  }
+  
+  .portfolio-details .portfolio-info {
+    padding: 30px;
+    box-shadow: 0px 0 30px rgba(21, 21, 21, 0.08);
+  }
+  
+  .portfolio-details .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .portfolio-details .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+  }
+  
+  .portfolio-details .portfolio-info ul li+li {
+    margin-top: 10px;
+  }
+  
+  .portfolio-details .portfolio-description {
+    padding-top: 30px;
+  }
+  
+  .portfolio-details .portfolio-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-details .portfolio-description p {
+    padding: 0;
+  }
+  
+
+
+

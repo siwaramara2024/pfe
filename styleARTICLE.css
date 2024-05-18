@@ -1,0 +1,119 @@
+/* Custom Style */
+
+.layout_padding,
+.layout_padding2,
+.layout_padding2-top,
+.layout_padding2-bottom,
+.layout_padding-top,
+.layout_padding-bottom {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.card.text-bg-dark {
+  border-radius: 15px;
+  overflow: hidden; /* Pour s'assurer que le contenu ne dépasse pas les coins arrondis */
+}
+
+.card.text-bg-dark .card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.75); /* Couleur de fond sombre */
+  border-radius: 0; /* Réinitialisez les coins de la superposition d'image */
+}
+.card-img{
+  border: none;
+  border-radius: 15px;
+}
+.artt {
+  border: none;
+  border-radius: 30px;
+}
+.article{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* Centrage des éléments de titre */
+.heading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading_container h2 {
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.heading_container h2::before {
+  content: "";
+  width: 40px;
+  height: 7px;
+  background-color: #DFEF57;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.heading_container.heading_center h2::before {
+  transform: translateX(-50%);
+}
+
+.temoinage {
+	font-family: Century Gothic;
+	font-size: 40px;
+	text-align: center;
+	text-transform: lowercase;
+  }
+.sous{
+	color: #256a89;
+	padding:  0px 20px;
+	text-decoration: underline;
+  }
+  .boxe{ 
+	background-color: rgba(121, 213, 221, 0.5);
+	border-radius:15px;
+  width: 95%;
+  }
+.trait{
+	border-left: 8px solid  #DFEF57;
+	padding: 20px;
+}
+  .question{
+	font-size: 40px;
+	font-weight: 600;
+	color: #3082a5;
+  }
+  .image{
+	border-radius: 15px;
+  }
+.brand-color {
+  color: #3082a5;
+}
+.cmnt{ 
+  border-radius: 15px;
+}
+.btn {
+  background: #DFEF57 !important;
+  border-radius: 30px;
+  color: black;
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+.scrollToTop {
+	padding: 10px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+	z-index: 99;
+}
+.card-body{
+	height: 100px;
+	border-radius: 15px;
+}
+.titre{
+	font-family: C;
+}

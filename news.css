@@ -1,0 +1,451 @@
+.layout_padding,
+.layout_padding2,
+.layout_padding2-top,
+.layout_padding2-bottom,
+.layout_padding-top,
+.layout_padding-bottom {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+/* Centrage des éléments de titre */
+.heading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading_container h2 {
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.heading_container h2::before {
+  content: "";
+  width: 40px;
+  height: 7px;
+  background-color: #DFEF57;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.heading_container.heading_center h2::before {
+  transform: translateX(-50%);
+}
+
+.temoinage {
+	font-family: Century Gothic;
+	font-size: 40px;
+	text-align: center;
+	text-transform: lowercase;
+  }
+
+
+
+
+* {
+	box-sizing: border-box
+}
+
+.news {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	font-family: "Myriad Pro", ;
+	color: #10182f
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1040px;
+	flex-wrap: wrap
+}
+
+.card {
+	margin: 30px;
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.123);
+	overflow: hidden;
+	width: 350px;
+	cursor: pointer;
+	
+	
+}
+
+
+
+.card:hover h4 {
+	text-decoration: underline
+}
+.card:hover  {
+	text-decoration: underline
+	box-shadow:#4c9daf
+}
+.bi{
+	margin-right: 10px;
+	color: black;
+	
+}
+.user-and-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+.card-body {
+    position: relative; /* Pour permettre le positionnement absolu du tag */
+}
+
+.tag {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Place le tag à 10px de la droite */
+}
+
+
+.info-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.info-table td {
+    padding: 10px;
+    border: 0; /* Supprime les bordures par défaut */
+}
+
+.info-table td:nth-child(odd) {
+    width: 50%;
+}
+
+.info-table td:nth-child(even) {
+    height: 50px;
+}
+
+.info-table td:nth-child(3),
+.info-table td:nth-child(4) {
+    height: auto;
+}
+
+.info-table td:not(:last-child) {
+    border-right: 1px solid #ddd; /* Ajoute la bordure à droite de chaque cellule sauf la dernière */
+}
+
+.info-table tr:not(:last-child) td {
+    border-bottom: 1px solid #ddd; /* Ajoute la bordure en bas de chaque cellule sauf la dernière ligne */
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 40px;
+}
+
+.user {
+    display: flex;
+    margin-top: auto;
+}
+
+.user img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+.user-info h5 {
+    margin: 0;
+    font-family: Product Sans Medium Regular;
+    font-size: 18px;
+}
+
+.user-info small {
+    color: #545d7a;
+    font-size: 13.5px;
+    font-family: Inter;
+}
+
+.card-body h4 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-family: Product Sans Bold;
+}
+
+.card-header img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 20px;
+	min-height: 40px
+}
+
+.tag {
+	background: #ccc;
+	border-radius: 50px;
+	font-size: 13px;
+	margin: 0;
+	color: #fff;
+	padding: 6px 10px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-family: Product Sans Bold;
+	letter-spacing: .7px
+}
+
+.tag-teal {
+	background-color: #47bcd4
+}
+
+.tag-purple {
+	background-color: #DFEF57
+}
+
+.tag-pink {
+	background-color: #47bcd4
+}
+
+.card-body p {
+	font-size: 15px;
+	margin: 0 0 40px;
+	color: #545d7a
+}
+
+.user {
+	display: flex;
+	margin-top: auto
+}
+
+.user img {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px
+}
+
+.user-info h5 {
+	margin: 0;
+	font-family: Product Sans Medium Regular;
+	font-size: 18px
+}
+
+.user-info small {
+	color: #545d7a;
+	font-size: 13.5px;
+	font-family: Inter
+}
+
+.card-body h4 {
+	font-size: 22px;
+	margin-top: 10px;
+	margin-bottom: 7px;
+	font-family: Product Sans Bold
+}
+
+
+
+
+/* filtr */
+/* Styles généraux */
+* {
+    box-sizing: border-box;
+}
+
+/* Styles des éléments de filtrage */
+.filter-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#price-range{
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-right: 30px;
+	margin-top: 30px;
+    font-size: 17px;
+	color: black;
+    transition: border-color 0.3s; /* Transition pour la couleur de la bordure */
+}
+#price-value{
+	padding: 10px;
+	margin-top: 20px;
+    font-size: 17px;
+	color: black;
+   
+}
+.filter-container select,
+#select-date {
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-right: 10px;
+	margin-top: 20px;
+    font-size: 17px;
+	color: black;
+    transition: border-color 0.3s; /* Transition pour la couleur de la bordure */
+}
+
+.filter-container select:focus,
+#select-date:focus,
+#price-range:focus {
+    outline: none; /* Supprimer la bordure de focus */
+}
+
+.filter-container select option:checked {
+    background-color: #4c9daf; /* Couleur de fond lorsque l'option est sélectionnée */
+    color: white; /* Couleur du texte lorsque l'option est sélectionnée */
+}
+
+
+
+/* Styles pour les curseurs remplis */
+#price-range:valid::-webkit-slider-thumb {
+    background-color: #4c9daf; /* Couleur du curseur lorsque le curseur est rempli */
+}
+
+/* Styles pour le champ de date sans cadre lorsqu'il est rempli */
+#select-date:focus {
+    outline: none;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Styles pour les éléments remplis */
+.filter.filled,
+#price-range.filled,
+#select-date.filled {
+    border-color: #4c9daf; /* Couleur de la bordure lorsque rempli */
+}
+
+#price-range.filled {
+    border-color: #4c9daf;
+}
+
+#select-date.filled {
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-left: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    border-color: #4c9daf;
+}
+
+#select-price.filled {
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-left: 30px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    border-color: #4c9daf;
+}
+
+/* Styles pour la barre de prix */
+.price-container {
+    display: flex;
+    align-items: center; /* Alignement vertical au centre */
+}
+
+/* Conteneur pour la barre de prix et la valeur */
+.price-inputs {
+    display: flex;
+    align-items: center; /* Alignement vertical au centre */
+}
+
+#price-range {
+    width: 180px;
+	
+    margin-left: 30px; /* Marge entre la barre de prix et la valeur */
+    appearance: none; /* Suppression du style par défaut du navigateur */
+    background-color: #DFEF57; /* Couleur de la barre de prix */
+    border: none; /* Suppression de la bordure */
+    border-radius: 15px; /* Bord arrondi pour la barre de prix */
+	height: 0px;/* Hauteur de la barre de prix *
+    outline: none; /* Suppression de l'effet de focus */
+}
+
+/* Styles pour le point de la barre de prix */
+#price-range::-webkit-slider-thumb {
+    width: 15px; /* Largeur du point */
+    height: 15px; /* Hauteur du point */
+    background-color: #fff; /* Couleur du point */
+    border: none; /* Suppression de la bordure */
+    border-radius: 100%; /* Bord droit pour le point */
+    cursor: pointer; /* Curseur pointer pour indiquer l'interaction */
+    -webkit-appearance: none; /* Suppression du style par défaut du navigateur */
+    appearance: none; /* Suppression du style par défaut du navigateur */
+}
+
+/* Styles pour la valeur de prix */
+#price-value {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Styles pour les sélecteurs */
+#price-range {
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-left: 30px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Transition pour la couleur de la bordure */
+}
+.filter-container select,
+#select-date{
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Transition pour la couleur de la bordure */
+}
+
+/* Styles au survol */
+.filter-container select:hover,
+#select-date:hover,
+#price-range:hover {
+    border-color: #4c9daf; /* Couleur de la bordure au survol */
+}
+
+/* Styles pour le focus */
+.filter-container select:focus,
+#select-date:focus {
+    outline: none; /* Supprimer la bordure de focus */
+    border-color: #4c9daf; /* Couleur de la bordure au focus */
+}
+
+/* Styles pour les options sélectionnées */
+.filter-container select option:checked {
+    background-color: #4c9daf; /* Couleur de fond lorsque l'option est sélectionnée */
+    color: white; /* Couleur du texte lorsque l'option est sélectionnée */
+}
+
+
+
+
+
+
